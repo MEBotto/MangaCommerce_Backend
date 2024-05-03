@@ -14,7 +14,7 @@ const socketServer = new Server(httpServer, {
 socketServer.on("connection", (socket) => {
   logger.info(`Client connected: ${socket.id}`);
   socket.on("message", (data) => {
-    fetch("http://localhost:8080/api/messages", {
+    fetch("https://mangacommercebackend-production.up.railway.app/api/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

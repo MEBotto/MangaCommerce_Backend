@@ -2,7 +2,7 @@ import { expect } from "chai";
 import supertest from "supertest";
 import bcrypt from "bcrypt";
 
-const requester = supertest("http://localhost:8080");
+const requester = supertest("https://mangacommercebackend-production.up.railway.app");
 
 let createdUser;
 

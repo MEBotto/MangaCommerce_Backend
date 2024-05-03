@@ -25,7 +25,7 @@ const githubCallbackController = async (req, res) => {
     maxAge: 8 * 60 * 60 * 1000,
   });
 
-  res.redirect("http://localhost:5173/");
+  res.redirect("https://manga-commerce-frontend.vercel.app/");
 };
 
 const googleCallbackController = async (req, res) => {
@@ -44,7 +44,7 @@ const googleCallbackController = async (req, res) => {
 
   res.status(200).json({ jwt: access_token });
 
-  res.redirect("http://localhost:5173/products");
+  res.redirect("https://manga-commerce-frontend.vercel.app/products");
 };
 
 const registerController = async (req, res) => {
@@ -163,7 +163,7 @@ const recoverPasswordController = async (req, res) => {
     }
 
     const token = uuidv4();
-    const link = `http://localhost:5173/password_reset?token=${token}&email=${email}`;
+    const link = `https://manga-commerce-frontend.vercel.app/password_reset?token=${token}&email=${email}`;
 
     const now = new Date();
     const oneHourMore = 60 * 60 * 1000;

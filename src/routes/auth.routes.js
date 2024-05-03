@@ -45,7 +45,7 @@ authRouter.get(
   "/github/callback",
   passport.authenticate(GitHubStrategy, {
     session: false,
-    failureRedirect: "http://localhost:5173/login",
+    failureRedirect: "https://manga-commerce-frontend.vercel.app/login",
     failureFlash: true,
   }),
   githubCallbackController
@@ -60,7 +60,7 @@ authRouter.get(
 //   "/google/callback",
 //   passport.authenticate("google", {
 //     session: false,
-//     failureRedirect: "http://localhost:5173",
+//     failureRedirect: "https://manga-commerce-frontend.vercel.app/",
 //     failureFlash: true,
 //   }),
 //   googleCallbackController

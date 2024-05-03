@@ -6,7 +6,7 @@ import { Server } from "socket.io";
 
 const socketServer = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://manga-commerce-frontend.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
   },
 });

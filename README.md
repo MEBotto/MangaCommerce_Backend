@@ -29,5 +29,5 @@ MangaCommerce is a full-stack e-commerce platform for manga enthusiasts, built w
 - MongoDB
 - Socket.io
 
-###Note
+### Note
 This version cannot be used as-is because it lacks proper localhost configurations for development. Please ensure you set up the necessary environment variables and localhost configurations as described in the repositories.
